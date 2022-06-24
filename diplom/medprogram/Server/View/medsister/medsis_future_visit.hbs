@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale-1.0">
+    <title>Записи</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex header-container">
+            <a href="medsismain" class="header-menu">
+                Назад
+            </a>
+            <a href="/" class="header-name">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+<!--            <p class="back">-->
+<!--                <a href="/" class="arrow">-->
+<!--                    Назад-->
+<!--                </a>-->
+<!--            </p>-->
+            <p class="headlines">
+                Приемы:
+            </p>
+            <div class="wrapper">
+                {{#each Card}}
+                <div class="card-visit">
+                    <p class="text data">
+                        Статус: {{this.StatusID}}
+                    </p>
+                    <p class="text data">
+                        {{this.DataTiem}}
+                    </p>
+                    <p class="text">
+                        Пациент: {{this.pSurname}} {{this.pName}} {{this.pPatronymic}}
+                    </p>
+                    <p class="text">
+                        {{this.PositionName}}: {{this.eSurname}} {{this.eName}} {{this.ePatronymic}}
+                    </p>
+                    {{!-- <a href="../medsister/medsisentry.html" class="card-visit-button">
+                        Редактировать запись
+                    </a> --}}
+                    <a href="/medsisfuturevisit">
+                        <button onclick="myFunction( '{{this.ID}}' )" id="{{this.ID}}" value={{this.StatusID}}
+                            class="card-visit-button">Изменить статус записи</button>
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+    </main>
+    <script>
+        function myFunction(ID) {
+            let status = document.getElementById(ID).value;
+            if (status == "Окончен") {
+                return;
+            }
+            if (confirm("Bы уверены что хотите\nизменить статус записи?")) {
+                if (status == "Отменен") {
+                    document.getElementById(ID).value = "Назначен";
+                }
+                else if (status == "Назначен") {
+                    document.getElementById(ID).value = "Отменен";
+                }
+                status = document.getElementById(ID).value;
+                let user = JSON.stringify({ ID: ID, Status: status });
+                let request = new XMLHttpRequest();
+                request.open("POST", "/changestatus", true);
+                request.setRequestHeader("Content-Type", "application/json");
+
+                request.send(user);
+            }
+        }
+    </script>
+</body>
+
+</html>

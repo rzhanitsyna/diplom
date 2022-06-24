@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale-1.0">
+    <title>Медсестра {{Name}}</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container flex header-container">
+            <a href="vhod" class="header-menu">
+                Bыход
+            </a>
+            <a href="/" class="header-name">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="container flex index-container">
+            <div class="left">
+                <img src={{Photo}} alt="photo" class="main-profile-photo">
+                <nav class="nav-client">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <p class="index-info">{{Surname}} {{Name}} {{Patornymic}}</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="index-info">Медсестра</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box-information">
+                <nav class="mnav-client">
+                    <ul class="mnav-list">
+                        <li class="mnav-item">
+                            <a href="medsisfuturevisit" class="dnav-link">
+                                Bсе события
+                            </a>
+                        </li>
+                        <hr class="dhr">
+                        <li class="mnav-item">
+                            <a href="medsisnewpatient" class="dnav-link">
+                                Добавление пациента
+                            </a>
+                        </li>
+                        <hr class="dhr">
+                        <li class="mnav-item">
+                            <a href="medsisnewdoctor" class="dnav-link">
+                                Добавление врача
+                            </a>
+                        </li>
+                        <hr class="dhr">
+                        <li class="mnav-item">
+                            <a href="medsisentry" class="dnav-link">
+                                Создание записи
+                            </a>
+                        </li>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale-1.0">
+    <title>Пациент {{Name}}</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="header">
+    <div class="container flex header-container">
+        <a href="vhod" class="header-menu">
+            Bыход
+        </a>
+        <a href="/" class="header-name">
+            {{Surname}} {{Name}} {{Patornymic}}
+        </a>
+    </div>
+</div>
+<main>
+    <div class="container flex index-container">
+        <div class="left">
+        <img src={{Photo}} alt="photo" class="main-profile-photo">
+        <nav class="nav-client">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="lastvisit" class="nav-link">Прошедшие приемы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="futurevisit" class="nav-link">Назначенные приемы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="entry" class="nav-link">Запись на прием</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="box-information">
+            <h2 class="headlines">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </h2>
+            <p class="index-info">
+                Паспортные данные
+            </p>
+            <div class="field-block-info">
+                <p class="info-inside">
+                {{Passport}}
+            </p>
+            </div>
+            <p class="index-info">
+                Адрес проживания
+            </p>
+            <div class="field-block-info">
+                <p class="info-inside">
+                {{Address}}
+            </p>
+            </div>
+            <p class="index-info">
+                Номер телефона
+            </p>
+            <div class="field-block-info">
+                <p class="info-inside">
+                {{Phone}}
+            </p>
+            </div>
+            <p class="index-info">
+                Медицинский полис
+            </p>
+            <div class="field-block-info">
+                <p class="info-inside">
+                {{MedicalPolicy}}
+            </p>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale-1.0">
+    <title>Запись</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container flex header-container">
+            <a href="medsismain" class="header-menu">
+                Назад
+            </a>
+            <a href="/" class="header-name">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+<!--            <p class="back">-->
+<!--                <a href="/" class="arrow">-->
+<!--                    Назад-->
+<!--                </a>-->
+<!--            </p>-->
+            <form method="POST" enctype="multipart/form-data">
+                <p class="headlines">
+                    Bыберите пациента
+                </p>
+                <select name="patient" id="patient" class="doctor-select">
+                    <optgroup label="Пациент">
+                        {{#each Patients}}
+                        <option value={{this.Login}}>{{this.Surname}} {{this.Name}} {{this.Patornymic}}</option>
+                        {{/each}}
+                    </optgroup>
+                </select>
+                <p class="headlines">
+                    Bыберите медицинскую услугу и врача
+                </p>
+                <select name="doctor" class="doctor-select">
+                    {{#each Positions}}
+                    <optgroup label={{this.[0]}}>
+                        {{#each this.[1]}}
+                        <option value={{this.Login}}>{{this.Surname}} {{this.Name}} {{this.Patornymic}}</option>
+                        {{/each}}
+                    </optgroup>
+                    {{/each}}
+                </select>
+                <p class="headlines">
+                    Bыберите время
+                </p>
+                <select name="time" class="doctor-select">
+                    {{#each DateTime}}
+                    <optgroup label={{this.Date}}>
+                        {{#each this.Times}}
+                        <option value={{this.DateObject}}>{{this.Time}}</option>
+                        {{/each}}
+                    </optgroup>
+                    {{/each}}
+                </select>
+                <input type="submit" class="back-to-index-entry">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

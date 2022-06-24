@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale-1.0">
+    <title>Добавить пользователя</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container flex header-container">
+            <a href="medsismain" class="header-menu">
+                Назад
+            </a>
+            <a href="/" class="header-name">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="container flex index-container">
+            <div class="box-new-person">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="field">
+                        <label class="label">Фамилия пациента</label>
+                        <div class="control">
+                            <input name="surname" class="input" type="text" placeholder="Bведите фамилию">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Имя пациента</label>
+                        <div class="control">
+                            <input name="name" class="input" type="text" placeholder="Bведите имя">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Отчество пациента</label>
+                        <div class="control">
+                            <input name="patronymic" class="input" type="text" placeholder="Bведите отчество">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Телефон</label>
+                        <div class="control">
+                            <input name="telephone" class="input" type="text" placeholder="Bведите телефон">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Паспорт</label>
+                        <div class="control">
+                            <input name="passport" class="input" type="text" placeholder="Bведите паспорт">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Медицинский полис</label>
+                        <div class="control">
+                            <input name="medpolice" class="input" type="text" placeholder="Bведите полис">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Адрес</label>
+                        <div class="control">
+                            <input name="adress" class="input" type="text" placeholder="Bведите адрес">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Логин</label>
+                        <div class="control">
+                            <input name="login" class="input" type="text" placeholder="Bведите адрес">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Пароль</label>
+                        <div class="control">
+                            <input name="password" class="input" type="password" placeholder="Bведите адрес">
+                        </div>                        
+                    </div>    
+                    <div class="field">
+                        <label class="label">Фото</label>
+                        <div class="control">
+                            <input name="file" type="file" class="input">
+                        </div>
+                    </div>                
+                    <input type="submit" value="Сохранить" class="back-to-index-entry">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

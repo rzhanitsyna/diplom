@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex header-container">
+            <a href="doctorlastvisit" class="header-menu">
+                Назад
+            </a>
+            <a href="/" class="header-name">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p class="headlines-card">
+                Карта приема
+            </p>
+            <p class="text-card">
+                Пациент: {{pSurname}} {{pName}} {{pPatronymic}}
+            </p>
+            <p class="text-card card-margin">
+                Дата приема: {{DataTiem}}
+            </p>
+            <form method="post">
+                <div class="field flex field-container">
+                    <label class="label">Диагноз</label>
+                    <div class="field-block-diagnos">
+                        <p class="info-inside-card">
+                            {{Diagnosis}}
+                        </p>
+                    </div>
+                </div>
+                <div class="field flex field-container">
+                    <label class="label">Пояснение</label>
+                    <div class="field-block">
+                        <p class="info-inside-card">
+                            {{Clarification}}
+                        </p>
+                    </div>
+                </div>
+                <div class="field flex field-container">
+                    <label class="label">Лечение</label>
+                    <div class="field-block">
+                        <p class="info-inside-card">
+                            {{Medication}}
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>

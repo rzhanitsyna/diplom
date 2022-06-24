@@ -1,0 +1,550 @@
+@font-face {
+    font-family: "ComfortaaLight";
+    src: url("../fonts/ComfortaaLight/ComfortaaLight.eot");
+    src: url("../fonts/ComfortaaLight/ComfortaaLight.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/ComfortaaLight/ComfortaaLight.woff") format("woff"),
+        url("../fonts/ComfortaaLight/ComfortaaLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "ComfortaaRegular";
+    src: url("../fonts/ComfortaaRegular/ComfortaaRegular.eot");
+    src: url("../fonts/ComfortaaRegular/ComfortaaRegular.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/ComfortaaRegular/ComfortaaRegular.woff") format("woff"),
+        url("../fonts/ComfortaaRegular/ComfortaaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1182px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header {
+    background-color: #42657A;
+    opacity: 0.87;
+    font-family: ComfortaaRegular;
+    font-size: 25px;
+}
+
+.header-menu {
+    color: white;
+    text-decoration: none;
+    margin-right: auto;
+    /*background-image: url("../img/return.png");*/
+    background-repeat: no-repeat;
+    padding-left: 65px;
+    background-size: contain;
+    background-position: left center;
+}
+
+.header-name {
+    color: white;
+    text-decoration: none;
+    background-image: url("../img/profile.svg");
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-size: contain;
+    background-position: left center;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.arrow {
+    color: black;
+    font-size: 20px;
+    background-image: url("../img/return.png");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-size: contain;
+    background-position: left center;
+    text-decoration: none;
+    font-family: ComfortaaRegular;
+}
+
+.box-information {
+    width: 600px;
+    height: 550px;
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 30px;
+    background-position: left center;
+    margin-right: 0;
+    margin-left: 90px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.headlines {
+    font-family: ComfortaaLight;
+    font-size: 30px;
+    color: #42657A;
+    text-align: center;
+}
+
+.card-visit {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    width: 250px;
+    height: 380px;
+    height: fit-content;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.text {
+    font-family: ComfortaaRegular;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.data {
+    margin-top: 0;
+}
+
+.doctor {
+    margin-bottom: 60px;
+}
+
+.card-visit-button {
+    font-family: ComfortaaRegular;
+    font-size: 16px;
+    color: #42657A;
+    text-decoration: none;
+}
+
+.text-card {
+    font-family: ComfortaaRegular;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.field-block {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    width: 70%;
+    height: 90px;
+    margin: 0 auto;
+    background-position: left center;
+    font-family: ComfortaaLight;
+    font-size: 20px;
+    color: #42657A;
+    text-align: left;
+}
+
+.field-block-diagnos {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    width: 70%;
+    height: 44px;
+    text-align: center;
+    margin: 0 auto;
+    background-position: left center;
+}
+
+.label {
+    font-family: ComfortaaRegular;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    background-position: left center;
+    width: 100px;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.flex {
+    margin-bottom: 20px;
+}
+
+.headlines-card {
+    font-family: ComfortaaLight;
+    font-size: 30px;
+    color: #42657A;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card-margin {
+    margin-bottom: 50px;
+}
+
+.delit-visit-card {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    margin: 90px auto 0;
+}
+
+.delit-visit-card-text {
+    font-family: ComfortaaRegular;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.delit-visit-card-text-blue {
+    font-family: ComfortaaRegular;
+    font-size: 20px;
+    color: #42657A;
+    text-align: center;
+    font-size: large;
+}
+
+.top {
+    margin-top: 50px;
+}
+
+.delit-visit-card-button {
+    font-family: ComfortaaRegular;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back-to-index {
+    font-family: ComfortaaLight;
+    font-size: 26px;
+    color: #42657A;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px auto 0;
+}
+
+.delit-visit-card-done {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    width: 50%;
+    height: 340px;
+    text-align: center;
+    margin: 90px auto 0;
+}
+
+.main-profile-photo {
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+    padding-left: 22px;
+}
+
+.left {
+    background-position: left center;
+    margin-right: 90px;
+    margin-left: 40px;
+}
+
+.index-container {
+    align-items: center;
+}
+
+.nav-client {
+    font-family: ComfortaaRegular;
+    font-size: 20px;
+    color: #42657A;
+    font-size: large;
+    margin-top: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #42657A;
+    font-size: 25px;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.dnav-client {
+    font-family: ComfortaaRegular;
+    font-size: 20px;
+    color: #42657A;
+    font-size: large;
+    margin-top: 15px;
+}
+
+.dnav-link {
+    text-decoration: none;
+    color: #42657A;
+    font-size: 25px;
+}
+
+.dnav-list {
+    list-style-type: none;
+}
+
+.dnav-item {
+    margin-top: 60px;
+    list-style-type: none;
+}
+
+.dhr {
+    background-color: #42657A;
+    height: 3px;
+    border: none;
+    width: 70%;
+    margin: 29px auto;
+}
+
+.mnav-client {
+    font-family: ComfortaaRegular;
+    font-size: 20px;
+    color: #42657A;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.mnav-link {
+    text-decoration: none;
+    color: #42657A;
+    font-size: 25px;
+}
+
+.mnav-list {
+    list-style-type: none;
+}
+
+.mnav-item {
+    margin-top: 44px;
+    list-style-type: none;
+}
+
+.vhod-container {
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.vhod-lable {
+    font-family: Comfortaa;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.vhod-lable-div {
+    margin-top: 40px;
+}
+
+.form-control {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    width: 85%;
+    height: auto;
+    margin-top: 55px;
+    background-position: left center;
+    font-family: ComfortaaLight;
+    font-size: 20px;
+    color: #42657A;
+    text-align: left;
+}
+
+.vhod-form {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    background-color: rgba(66, 101, 122, 0.80);
+    padding: 15px 16px;
+    width: 346px;
+    height: 500px;
+    text-align: center;
+    margin: 110px auto;
+}
+
+.vhod-button {
+    font-family: ComfortaaRegular;
+    font-size: 30px;
+    color: #42657A;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 60px auto 0;
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    width: fit-content;
+    height: auto;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.doctor-select {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    width: 370px;
+    height: 70px;
+    font-family: ComfortaaRegular;
+    font-size: 20px;
+    color: #42657A;
+    font-size: large;
+    margin-left: 400px;
+    padding-left: 10px;
+}
+
+.index-info {
+    font-family: ComfortaaLight;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.info-inside {
+    font-family: ComfortaaLight;
+    font-size: 20px;
+    color: #42657A;
+    text-align: center;
+    margin: 0;
+}
+
+.field-block-info {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    padding: 15px 16px;
+    width: 70%;
+    height: 15px;
+    text-align: center;
+    margin: 0 auto;
+    background-position: left center;
+}
+
+.info-inside-card {
+    font-family: ComfortaaLight;
+    font-size: 20px;
+    color: #42657A;
+    text-align: left;
+    margin: 0;
+}
+
+.back-to-index-entry {
+    font-family: ComfortaaRegular;
+    font-size: 30px;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px auto 0;
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    background-color: #42657A;
+}
+
+.table {
+    border-collapse: collapse;
+    border: 3px solid #42657A;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: ComfortaaRegular;
+    margin: auto;
+}
+
+td,
+th {
+    border: 3px solid #42657A;
+    padding: 10px 50px;
+}
+
+td {
+    text-align: center;
+}
+
+.input {
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    background-position: left center;
+    font-family: ComfortaaLight;
+    font-size: 10px;
+    color: #42657A;
+    text-align: left;
+}
+
+.field {
+    margin-top: 15px;
+}
+
+.box-new-person {
+    width: 600px;
+    height: auto;
+    border-color: #42657A;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 30px;
+    background-position: left center;
+    margin: auto;
+    text-align: center;
+}

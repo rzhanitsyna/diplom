@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale-1.0">
+    <title>Сотрудник</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container flex header-container">
+            <a href="vhod" class="header-menu">
+                Bыход
+            </a>
+            <a href="/" class="header-name">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="container flex index-container">
+            <div class="left">
+                <img src={{Photo}} alt="photo" class="main-profile-photo">
+                <nav class="nav-client">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <p class="index-info">{{Surname}} {{Name}} {{Patornymic}}</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="index-info">{{Position}}</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box-information">
+                <nav class="dnav-client">
+                    <ul class="dnav-list">
+                        <li class="dnav-item">
+                            <a href="../employee/doctortable.html" class="dnav-link">
+                                Расписание
+                            </a>
+                        </li>
+                        <hr class="dhr">
+                        <li class="dnav-item">
+                            <a href="doctorfuturevisit" class="dnav-link">
+                                Назначенные приемы
+                            </a>
+                        </li>
+                        <hr class="dhr">
+                        <li class="dnav-item">
+                            <a href="doctorlastvisit" class="dnav-link">
+                                Прошедшие приемы
+                            </a>
+                        </li>
+                        <hr class="dhr">
+                        <li class="dnav-item">
+                            <a href="doctorentry" class="dnav-link">
+                                Создание записи
+                            </a>
+                        </li>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale-1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex header-container">
+            <a href="employeemain" class="header-menu">
+                Назад
+            </a>
+            <a href="/" class="header-name">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p class="headlines">
+                Прошедшие приемы
+            </p>
+            <div class="wrapper">
+                {{#each Card}}
+                <div class="card-visit">
+                    <p class="text data">
+                        Статус: {{this.StatusID}}
+                    </p>
+                    <p class="text data">
+                        {{this.DataTiem}}
+                    </p>
+                    <p class="text">
+                        Пациент: {{this.pSurname}} {{this.pName}} {{this.pPatronymic}}
+                    </p>
+                    <form method="post">
+                        <input name="ID" type="hidden" value="{{this.ID}}">
+                        <button id="{{this.ID}}" value={{this.ID}} type="submit"
+                            class="card-visit-button">Просмотр<br>подробностей<br>приема</button>
+                    </form>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

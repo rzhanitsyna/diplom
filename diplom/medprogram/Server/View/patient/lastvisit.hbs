@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale-1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex header-container">
+            <a href="patientmain" class="header-menu">
+                Назад
+            </a>
+            <a href="/" class="header-name">
+                {{Surname}} {{Name}} {{Patornymic}}
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p class="headlines">
+                Прошедшие приемы
+            </p>
+            <div class="wrapper">
+                {{#each Card}}
+                <div class="card-visit">
+                    <p class="text data">
+                        Статус: {{this.StatusID}}
+                    </p>
+                    <p class="text data">
+                        {{this.DataTiem}}
+                    </p>
+                    <p class="text">
+                        {{this.PositionName}}: {{this.eSurname}} {{this.eName}} {{this.ePatronymic}}
+                    </p>
+                    <form method="post">
+                        <input name="ID" type="hidden" value="{{this.ID}}">
+                        <button id="{{this.ID}}" value={{this.ID}} type="submit"
+                            class="card-visit-button">Просмотр<br>подробностей<br>приема</button>
+                    </form>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </main>
+    <script>
+        function myFunction(ID) {
+            let status = document.getElementById(ID).value;
+            // if (status == "Окончен") {
+            //     return;
+            // }
+            // if (confirm("Bы уверены что хотите\nизменить статус записи?")) {
+            //     if (status == "Отменен") {
+            //         document.getElementById(ID).value = "Назначен";
+            //     }
+            //     else if (status == "Назначен") {
+            //         document.getElementById(ID).value = "Отменен";
+            //     }
+            //     status = document.getElementById(ID).value;
+            //     let user = JSON.stringify({ ID: ID, Status: status });
+            //     let request = new XMLHttpRequest();
+            //     request.open("POST", "/changestatus", true);
+            //     request.setRequestHeader("Content-Type", "application/json");
+
+            //     request.send(user);
+            // }
+        }
+    </script>
+</body>
+
+</html>
